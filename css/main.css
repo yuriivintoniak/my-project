@@ -240,7 +240,7 @@ input[type=text], input[type=email] {
   padding: 10px 17px;
   margin-right: 3px;
   border-radius: 5px;
-  border: 3px solid #cc4faa;
+  border: 3px solid #B890C3;
 }
 
 input[type=text]:hover, input[type=email]:hover {
@@ -252,7 +252,7 @@ input[type=submit] {
   padding: 10px 17px;
   margin-left: 5px;
   border-radius: 5px;
-  border: 3px solid #cc4faa;
+  border: 3px solid #B890C3;
   background-color: #8f3496;
 }
 
