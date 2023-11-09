@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
-
 </head>
 
 <body>
-
   <header class="header">
-
     <div class="header__content">
-
       <div class="dropdown">
-        <div class="dropmenu">
+        <div class="dropdown-burger">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
         </div>
   
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="#">Про мене</a>
+          <a href="#">Міні гра 2048</a>
+          <a href="#">Галерея</a>
+          <a href="#">Як зв'язатися</a>
         </div>
       </div>
 
@@ -37,68 +32,51 @@
         <a href="#" class="google"><i class="fa fa-google"></i></a> 
         <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
       </div>
-  
-    
-
     </div>
-    
   </header>
 
-
-
-
   <div class="row">
-
     <div class="side">
       <h1>Про мене</h1>
-      <p>Мене звати Юрій, мені 25 і зараз я проходжу курс від Ciklum. А це моє практичне завдання.</p>
+      <p>&nbsp; &nbsp; &nbsp;Мене звати Юрій, мені 25 років і зараз я проходжу курс від Ciklum. А це моє практичне завдання.</p>
     </div>
-
-
 
     <div class="main">
       <h1>Міні гра 2048</h1>
-      <p>Ігрове поле має форму квадрата 4x4. Необхідно переміщати та 
+      <p>&nbsp; &nbsp; &nbsp;Ігрове поле має форму квадрата 4x4. Необхідно переміщати та 
       з'єднувати числа для отримання плитки номіналу «2048» (за бажанням можна продовжити далі).</p>
     </div>
 
-
-
     <div class="gallery">
-
+      <h1>Галерея</h1>
 
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="images/2048-1.png" style="width:100%">
+          <img src="images/2048-11.png">
+        </div>
+
+        <div class="mySlides fade">>
+          <img src="images/2048-2.png">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="images/2048-2.png" style="width:100%">
+          <img src="images/2048-3.png">
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="images/2048-3.png" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="images/2048-4.jpg" style="width:100%">
+          <img src="images/2048-4.png">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
       </div>
 
-      <div style="text-align:center">
+      <div class="dots">
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
       </div>
-
 
       <script>
         let slideIndex = 1;
@@ -127,32 +105,18 @@
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
         }
-        </script>
-
-
-
+      </script>
     </div>
-
   </div>
 
   <footer class="footer">
-
     <div class="form__container">
-
       <form>
-        <label for="name"></label>
         <input type="text" id="name" name="name" placeholder="Ваше ім'я...">
-  
-        <label for="email"></label>
         <input type="email" id="email" name="email" placeholder="Ваш емейл...">
-  
         <input type="submit" value="Відправити">
       </form>
-
     </div>
-
   </footer>
-
 </body>
-
 </html>
